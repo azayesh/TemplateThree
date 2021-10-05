@@ -83,9 +83,13 @@ ul {
     position: sticky; 
     top: 0;
     z-index: 9999;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 .header .box-nav {
     padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 .header nav {
     display: flex;
@@ -136,10 +140,11 @@ ul {
     padding: 0;
     list-style-type: none;
     direction: rtl;
-
+    position: relative;
 }
 .header .ul-sty li {
     padding-left: 50px;
+    
 }
 .header .ul-sty li a {
     color: var(--third-color);
@@ -153,13 +158,13 @@ ul {
     bottom: -5px;
     left: 0;
     opacity: 0;
-    height: 3px;
+    height: 1px;
     width: 100%;
     transition: 0.3s;
 }
 .header ul li a:hover::after {
     opacity: 1;
-    transform: translateX(0px);
+    transform: translateY(3px);
 }
 @media screen and (max-width: 767px) {
     .header .burger {
@@ -177,16 +182,16 @@ ul {
         flex-direction: column;
         text-align: center;
         position: fixed;
-        top: 49%;
-        left: 0;
-        transform: translateY(-350%);
-        width: 100%;
+        top: 66px;
+        right: 0;
+        transform: translateX(120%);
+        width: 30%;
         transition: transform 0.3s ease-in;
         z-index: -1;
         padding: 0;
     }
     .header .ul-sty.show {
-        transform: translateY(-178%);
+        transform: translateX(0%);
     }
     .header .ul-sty li {
         margin: 0 auto;
@@ -198,12 +203,7 @@ ul {
         border: none
     }
 }
-@media screen and (max-width: 400px) {
-    .header .ul-sty.show {
-        transform: translateY(-188%);
-    }
-}
-/* end header  */
+
 /* start landing */
 .landing {
     margin: 0;
