@@ -284,9 +284,13 @@ ul {
 @media screen and (max-width: 767px) {
     .landing .text {
         padding-right: 10px;
+        background: linear-gradient(
+        hsl(0 0% 0% / 0) 10%, hsl(216deg 25% 35% / 1)60%);
+        color: var(--sacand-color);
     }
     .landing  .text h1 {
         font-size: 16px;
+        opacity: 1;
     }
     .landing  .text p {
         font-size: 14px;
