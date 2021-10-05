@@ -252,7 +252,6 @@ ul {
     top: 50%;
     right: 2px;
     transform: translatey(-50%);
-    /* background-color: #dadada; */
 }
 .landing .text {
     bottom: 0;
@@ -263,22 +262,24 @@ ul {
     transform: translatey(-50%);
     padding: 60px 50px 0 0;
     box-sizing: border-box;
-    background: linear-gradient(
-        hsl(0 0% 0% / 0) 10%, hsl(216deg 25% 35% / 1)60%);
-	color: var(--sacand-color);
-	font-size: 24px;
+    /* background: linear-gradient(
+        hsl(0 0% 0% / 0) 10%, hsl(216deg 25% 35% / 1)60%); */
+	color: var(--third-color);
     text-align: right;
     border-radius: 10px;
     font-weight: 200;
 }
 .landing .text h1 {
     font-weight: 600;
-    font-size: 25px;
+    font-size: 35px;
+    opacity: 0.5;
 }
 .landing .text p {
     font-weight: 300;
     line-height: 1.6;
     font-size: 18px;
+
+
 }
 @media screen and (max-width: 767px) {
     .landing .text {
