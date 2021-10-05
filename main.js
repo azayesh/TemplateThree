@@ -124,7 +124,7 @@ function createLetters() {
 }
 
 createLetters();
-update();
+// update();
 
 
 
