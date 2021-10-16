@@ -1,7 +1,8 @@
 /* start variables */
 :root {
     --main-color: #2d3d3d;
-    --sacand-color: #dadada;
+    /* --sacand-color: #dadada; */
+    --sacand-color: #fff;
     --third-color: #43546f;
 }
 /* end variables */
@@ -213,7 +214,7 @@ ul {
     overflow: hidden;
     position: relative;
     background: #dadada;
-    background: linear-gradient(to top left, var(--third-color),var(--sacand-color),var(--third-color));
+    background: linear-gradient(to top left, var(--third-color),var(--sacand-color));
 	/* align-items: center; */
 }
 .landing .absolute-center {
