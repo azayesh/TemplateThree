@@ -262,7 +262,7 @@ ul {
 @media screen and (max-width: 767px) {
     .landing .text {
         padding: 10px;
-        top: 15%;
+        top: 10%;
         left: 50%;
         width: fit-content;
         height: fit-content;
